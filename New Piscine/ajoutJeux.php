@@ -21,8 +21,7 @@
     foreach($q as $cat){
         $categories[$cat['NomCategorie']] = $cat['CodeCategorie'];
     }
-    // var_dump($editeurs);
-    // die();
+
 
 ?>
 <middle>
@@ -33,19 +32,19 @@
     </p>
                     
     <p>
-        <label for="NombreJoueur">Nombre Joueur</label> : <input type="int" name="nombre" id="nombre" required/>
+        <label for="NombreJoueur">Nombre Joueur</label> : <input type="int" name="nombre" id="nombre" />
 
     </p>
     <p>
-        <label for="DateSortie">Date sortie</label> : <input type="date" name="DateSortie" id="DateSortie" required/>
+        <label for="DateSortie">Date sortie</label> : <input type="date" name="DateSortie" id="DateSortie" />
 
     </p>
     <p>
-        <label for="DureePartie">Duree partie</label> : <input type="int" name="DureePartie" id="DureePartie" required/>
+        <label for="DureePartie">Duree partie</label> : <input type="int" name="DureePartie" id="DureePartie" />
         <!--<label for="Num">NUM </label><input type="number" name="numEditeur" id="numEditeur" required/>-->
 
     </p>
-     <p>
+    <p>
         <label for="numEditeur">Nom editeur</label> : <select name="numEditeur" id="numEditeur" required>
                 <?php
                 foreach($editeurs as $key => $value):
